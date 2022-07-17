@@ -1,12 +1,11 @@
-import { rest, setupWorker } from 'msw'
-import { factory, oneOf, manyOf, primaryKey } from '@mswjs/data'
-import { nanoid } from '@reduxjs/toolkit'
 import faker from 'faker'
 import seedrandom from 'seedrandom'
 import { Server as MockSocketServer } from 'mock-socket'
-import { setRandom } from 'txtgen'
-
+import { factory, oneOf, manyOf, primaryKey } from '@mswjs/data'
+import { nanoid } from '@reduxjs/toolkit'
 import { parseISO } from 'date-fns'
+import { rest, setupWorker } from 'msw'
+import { setRandom } from 'txtgen'
 
 const NUM_USERS = 3
 const POSTS_PER_USER = 3

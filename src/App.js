@@ -1,11 +1,10 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   Redirect,
+  Route,
+  Switch,
 } from 'react-router-dom'
-
 import { Navbar } from './app/Navbar'
 
 function App() {
